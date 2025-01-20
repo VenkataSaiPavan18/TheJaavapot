@@ -1,0 +1,84 @@
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+
+  }
+  
+  .modal-content {
+    margin: auto;
+    background-color: transparent;
+    border: 0px;
+    width: 100vw;
+  }
+  
+  .modal-body img {
+    width: 100%;
+    
+  }
+
+  
+
+
+
+/* Media Query for Mobile Devices */
+
+@media (max-width: 480px) {
+    .imgevent{
+        height: 60vh;
+      
+      }
+      .modal-body{
+        width: 85vw;
+      }
+      
+  
+
+}
+
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+.imgevent{
+        height: 70vh;
+      }
+
+      .modal-body{
+        width: 80vw;
+      }    
+    }
+
+
+
+/* Media Query for Tablets Ipads portrait mode */
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .imgevent{
+        height: 70vh;
+      }
+      .modal-body{
+        width: 60vw;
+      }
+      
+
+}
+
+
+
+/* Media Query for Laptops and Desktops */
+
+@media (min-width: 1025px) {
+    .imgevent{
+        height: 80vh;
+    }
+    .modal-body{
+      width: 50vw;
+    }
+}

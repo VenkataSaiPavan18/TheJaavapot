@@ -1,0 +1,136 @@
+.careers{
+   
+   
+    background-color: rgb(205, 228, 255);
+}
+
+.rotate-right {
+    transform: rotate(270deg); /* Rotate 90 degrees clockwise */
+    /* transform-origin: right bottom; */
+    padding: 8px;
+}
+
+.head1{
+    padding-left: 10px;
+    color: #4077bc;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+.job{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5); /* Adjust the scale factor for zooming in */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .zooming-image {
+    animation: zoomInOut 2s infinite; /* Adjust the duration as needed */
+    cursor: pointer;
+  }
+  
+
+/* Add this CSS in your stylesheet */
+.btn-inactive {
+    background-color:#f0835b; /* Change to the desired background color for inactive jobs */
+    
+  }
+
+  .activebtn {
+   background-color: #b6d4f0;
+  }
+  
+
+  .vertical-line {
+    width: 2px; /* Adjust the line width as needed */
+    background-color:orange; /* Line color */
+    height: 5rem; /* Make the line extend from top to bottom */
+  }
+
+
+  /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .datestyle{
+        width: 7rem;
+    }
+    .job{
+        width: 100%;
+    }
+    .btnimgs{
+        height: 30%;
+        width: 50%;
+    }
+    .titlestyle{
+        font-size: 16px;
+    }
+    .applybtn{
+        font-size: 10px;
+    }
+ 
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .datestyle{
+        width: 7rem;
+    }
+    .job{
+        width: 80%;
+    }
+    .btnimgs{
+        height: 30%;
+        width: 40%;
+    }
+    .titlestyle{
+        font-size: 18px;
+    }
+    .applybtn{
+        font-size: 12px;
+    }
+ 
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .datestyle{
+        width: 6rem;
+    }
+    .job{
+        width: 70%;
+    }
+    .btnimgs{
+        height: 30%;
+        width: 25%;
+    }
+    .titlestyle{
+        font-size: 20px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+.datestyle{
+    width: 7rem;
+}
+.job{
+    width: 60%;
+}
+.btnimgs{
+    height: 30%;
+    width: 20%;
+}
+.titlestyle{
+    font-size: 24px;
+}
+
+}

@@ -1,0 +1,44 @@
+.custom-input-profile {
+    background-color: #FFFFFFA1;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: for adding a border */
+    margin-bottom: 10px; /* Optional: for spacing between inputs */
+  }
+
+  .custom-btn {
+    background-color: #FD7E4B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-dlt-btn {
+    background-color: #fb4b06;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-dlt-btn:hover {
+    background-color: #fc6f3b; /* Slightly lighter shade on hover */
+  }
+
+  .custom-btn:hover {
+    background-color: #fc6f3b; /* Slightly lighter shade on hover */
+  }
+  
+  .custom-btn:disabled {
+    background-color: #ccc;
+  }
+
+  .action-buttons{
+    display: flex;
+    justify-content: space-around;
+  }

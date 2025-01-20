@@ -1,0 +1,15 @@
+/* Change the color of the navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FD7E4B;
+}
+
+/* Change the color of the pagination dots */
+.swiper-pagination-bullet {
+  background: #FD7E4B;
+}
+
+/* Change the color of the pagination dots on hover */
+.swiper-pagination-bullet:hover {
+  background: #f44c0a;
+}

@@ -1,0 +1,21 @@
+/* src/index.css */
+.product-card {
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-media {
+    height: 70%;
+    transition: height 0.5s;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    object-fit: cover;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    margin: auto; /* Center the image */
+  }

@@ -1,0 +1,143 @@
+.customized-subscription {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customized-subscription h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subscription-duration {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.subscription-duration button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #fd7e4b;
+  background-color: transparent;
+  color: #fd7e4b;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscription-duration button.active,
+.subscription-duration button:hover {
+  background-color: #fd7e4b;
+  color: #fff;
+}
+
+.product-selection {
+  margin-bottom: 20px;
+}
+
+.product-selection h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.product-item {
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-item.selected {
+  border-color: #fd7e4b;
+  box-shadow: 0 4px 8px rgba(253, 126, 75, 0.3);
+}
+
+.product-item img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-info span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.check-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: #fd7e4b;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subscribe-button {
+  text-align: center;
+}
+
+.subscribe-button button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #fd7e4b;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button button:hover {
+  background-color: #e26b3c;
+}
+
+@media (max-width: 768px) {
+  .subscription-duration button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .product-item img {
+    max-width: 80px;
+  }
+
+  .subscribe-button button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+

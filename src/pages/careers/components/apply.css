@@ -1,0 +1,31 @@
+.applybg{
+    /* background-color:#4077bc ; */
+    color: #172B4D;
+    height: auto;
+    width: 100vw;
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+label{
+    margin: 10px;
+    font-weight: 400;
+}
+
+input{
+    padding: 5px;
+    margin-left: 5px;
+    /* border-radius: 5px; */
+}
+
+.message{
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.jobimg{
+   height: 22rem;
+    width: 30rem;
+}

@@ -1,0 +1,163 @@
+.about-container {
+    /* background-image: url('../../assets/img/background/about-background-image.png'); */
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .img-container {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .about-card {
+    width: 30rem;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%; /* Vertically center the card within the container */
+    left: -20%; /* Move the card 20% to the left */
+    transform: translateY(-70%); /* Adjust to move the card up by 50% of its height */
+    z-index: 2; /* Place the card above the image */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the card */
+  }
+  
+  .image {
+    /* height:50rem;
+    width:50rem; */
+    position: relative;
+    z-index: 1; /* Place the image behind the card */
+    opacity: 0.6;
+  }
+  
+  .about-heading {
+    margin-top: -20px; /* Adjust this value to control the empty space above the heading */
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-heading::before {  
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjust this value to control the distance of the border bottom */
+    height: 10px; /* Adjust this value to control the thickness of the border bottom */
+    background-color: rgba(255, 99, 71, 0.5); /* Set the border color */
+    border-radius: 50%; /* Create a round border */
+  }
+
+  /* .about{
+    background-image: url('../../assets/img/background/background-02.png');
+    background-size: contain;
+    background-position:center;
+  } */
+
+
+  .background-container {
+    background-image: url('../../assets/img/about/image01.png');
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    color: white;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    background-color: rgba(127, 59, 4, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .topHeading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+
+  .topText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+
+  .storyHeading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 60px;
+    color: #5E5E5E;
+    letter-spacing: 3px;
+    text-align: center;
+    /* border-bottom: 1px solid #F67939; */
+  }
+
+  .FounderHeading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 14px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-align: start;
+    /* padding-left: 30px; */
+    border-top: 3px solid #F67939;
+    display: inline-block; 
+    padding-top: 10px; 
+    position: relative;
+  }
+
+  .storyHeading::after {
+    content: '';
+    display: block;
+    width: 285px;
+    height: 40px; 
+    background-image: url('../../assets/img/about/Frame.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 35px;
+    margin: auto;
+    margin: 20px auto;
+  }
+
+  .storyTitle{
+    font-family:serif;
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 3px;
+    border-bottom: 5px solid #F67939;
+  }
+
+  .storyText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 20px;
+    color: #848383;
+    letter-spacing: 3px;
+  }
+
+  .rest-about{
+    margin:auto
+  }
+

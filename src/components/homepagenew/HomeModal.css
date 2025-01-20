@@ -1,0 +1,8 @@
+
+  /* Style for the modal content */
+  .modal-content {
+    height: 50%; /* Height of the modal */
+    width: 50%; /* Width of the modal */
+    margin: auto; /* Center the modal horizontally */
+  }
+  

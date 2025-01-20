@@ -1,0 +1,211 @@
+/* General container and layout */
+.ordered-container {
+  /* background-color: #EDE4D7; */
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ordered-scroll-container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.ordered-header-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #363636;
+}
+
+.ordered-back-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ordered-back-icon {
+  color: #363636;
+  font-size: 24px;
+}
+
+.ordered-back-text {
+  font-size: 18px;
+  color: #363636;
+  margin-left: 5px;
+}
+
+/* Section styles */
+.ordered-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ordered-section-id,
+.order-address-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ordered-sectionTitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.ordered-itemText {
+  font-size: 20px;
+}
+
+.ordered-itemContainer {
+  display: flex;
+  align-items: center;
+}
+
+.ordered-itemImage {
+  width: 120px;
+  height: 150px;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.ordered-card-content-updates {
+  display: flex;
+  flex-direction: column;
+}
+
+.ordered-itemName {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.ordered-itemDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Status section */
+.ordered-statusContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.ordered-orderStatus {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ordered-statusIcon {
+  font-size: 34px;
+}
+
+/* Cancel button */
+.ordered-cancel-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.ordered-cancel-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ordered-cancel-button:hover {
+  background-color: darkred;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .ordered-scroll-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .ordered-header-title {
+    font-size: 28px;
+  }
+
+  .ordered-sectionTitle {
+    font-size: 20px;
+  }
+
+  .ordered-itemText {
+    font-size: 16px;
+  }
+
+  .ordered-section-id,
+  .order-address-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ordered-itemContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ordered-itemImage {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .ordered-cancel-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .ordered-orderStatus {
+    font-size: 18px;
+  }
+
+  .ordered-statusIcon {
+    font-size: 28px;
+  }
+}
+
+/* Responsive for very small screens */
+@media (max-width: 480px) {
+  .ordered-header-title {
+    font-size: 24px;
+  }
+
+  .ordered-sectionTitle {
+    font-size: 18px;
+  }
+
+  .ordered-itemText {
+    font-size: 14px;
+  }
+
+  .ordered-itemImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ordered-cancel-button {
+    font-size: 12px;
+  }
+  .ordered-itemDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

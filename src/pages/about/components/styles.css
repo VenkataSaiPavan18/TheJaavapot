@@ -1,0 +1,270 @@
+/* Container and layout */
+.responsive-container {
+  position: relative;
+  text-align: center;
+  margin: 100px 50px;
+  padding-bottom: 150px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.storyHeading {
+  font-size: 4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #F67939;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Card styles */
+.responsive-card {
+  background-color: #FFDDD0;
+  color: black;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  font-weight: 600;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.mission-card {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.vision-card {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.promise-card {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translate(-50%, -100px);
+}
+
+/* Icon and text container */
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-background {
+  color: #F67939;
+  background: rgba(253, 126, 75, 0.35);
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.card-title {
+  margin: 0;
+  color: #F67939;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-card-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justify;
+  color: #848383;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .responsive-container {
+    margin: 50px auto;
+    padding-bottom: 100px;
+  }
+
+  .responsive-card {
+    max-width: 90%;
+    position: static;
+    transform: none;
+    /* margin-bottom: 20px; */
+  }
+
+  .mission-card, .vision-card, .promise-card {
+    position: static;
+    transform: none;
+    margin: 20px 0;
+  }
+}
+
+
+/* founder */
+.founders-container {
+  margin-top: 100px;
+  margin: 50px 50px;
+}
+
+.FounderHeading {
+  text-align: center;
+}
+
+.HeadingContent {
+  margin-bottom: 20px;
+}
+
+.meet-our-text {
+  color: #fd7e4b;
+  font-weight: 400;
+}
+
+.founders-text {
+  color: #f67939;
+  font-size: 2rem;
+}
+
+.rest-about {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.founder-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.storyText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.quote-symbol {
+  color: #f67939;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .founders-container {
+    margin-top: 100px;
+    margin: 50px 0px;
+  }
+  .storyText {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .quote-symbol {
+    font-size: 25px;
+  }
+
+  .founder-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .founders-text {
+    font-size: 1.5rem;
+  }
+}
+
+
+.stories-container {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.storyHeading {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #F67939;
+}
+
+.rest-about {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  /* background-color: rgba(189, 152, 109, 0.5); */
+  padding: 2rem;
+  /* border-radius: 20px; */
+  /* box-shadow: 2px 2px 2px 2px black; */
+}
+
+/* .text-container {
+  padding: 20px;
+  text-align: justify;
+} */
+
+/* .storyTitle {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #333;
+} */
+
+/* .storyText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+} */
+
+.storyImage {
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .stories-container {
+    margin-top: 30px;
+    padding: 30px 10px;
+  }
+
+  .storyHeading {
+    font-size: 2rem;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .storyTitle {
+    font-size: 1.8rem;
+  }
+
+  .storyText {
+    font-size: 1rem;
+  }
+}

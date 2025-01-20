@@ -1,0 +1,33 @@
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+  }
+  
+  .swiper-slide-active .item {
+    animation: slideInDown 0.5s ease-in-out forwards;
+  }
+  
+  .swiper-slide-next .item, .swiper-slide-prev .item {
+    animation: slideOutUp 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOutUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  

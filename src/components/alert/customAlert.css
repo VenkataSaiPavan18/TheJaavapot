@@ -1,0 +1,50 @@
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .custom-alert-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .custom-alert-message {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .custom-alert-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custom-alert-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .custom-alert-button.confirm {
+    background-color: #f67939;
+    color: white;
+  }
+  
+  .custom-alert-button.cancel {
+    background-color: #ccc;
+    color: black;
+  }
+  
